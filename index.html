@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+  <h1 class="titulo">Meu Nome é Flávio</h1>
+
+  <p class="paragrafo">
+    Tenho 19 anos, moro em Anápolis, GO. Gosto de Games, Futebol e Rap
+    <ul class="paragrafo">
+      <li>Ouvir música</li>
+      <li>Jogar futebol</li>
+      <li>Assistir séries</li>
+    </ul>
+    <img class="imagem-arredondada" src="Imagens/jhyjtyk.jpg">
+  </p>
+
+  <table>
+    <caption>Países que eu gostaria de visitar</caption>
+    <tr>
+      <th>País</th>
+      <th>Foto</th>
+    </tr>
+    <tr>
+      <td>Inglaterra</td>
+      <td><img src="Imagens/inglaterra.jpg" width="200"></td>
+    </tr>
+    <tr>
+      <td>Egito</td>
+      <td><img src="Imagens/egito.png" width="200">
+      </td>
+    </tr>
+    <tr>
+      <td>Israel</td>
+      <td><img src="Imagens/israel.jpeg" width="200"></td>
+    </tr>
+  </table>
+
+  <h2 class="titulo">Site do Meu Interesse:</h2>
+  <p2 id="link" class="link">  <a href="https://onefootball.com/pt-br/inicio">One Football</a> </p2>
+  <script src="script.js"></script>
+  <p3>
+  <br><br><br><br>
+
+  <button class="botao" id="botao" >Clique para ver uma mensagem!</button> 
+  <div id="resposta">Só jogue se for para ganhar</div>
+
+  <script>
+   document.addEventListener("DOMContentLoaded", function () {
+    let botao = document.getElementById("botao");
+    let resposta = document.getElementById("resposta");
+   resposta.style.display = "none";
+   botao.addEventListener("click", function () {
+     if (resposta.style.display === "none" || resposta.style.display === "") {
+       resposta.style.display = "block";
+       botao.innerText = "Clique para esconder";
+     } else {
+       resposta.style.display = "none";
+       botao.innerText = "Clique para ver a mensagem";
+     }
+   }); 
+  });     
+</script>
+</p3>
+</body>
+</html>
